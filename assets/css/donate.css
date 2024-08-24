@@ -1,0 +1,85 @@
+html, body {
+    height: 50%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex: 1;
+    text-align: center;
+}
+
+.donation-info {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    box-sizing: border-box;
+}
+
+.donation-info h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.qr-code img {
+    max-width: 70%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donation-info {
+        padding: 0.75rem;
+        max-width: 95%;
+    }
+
+    .donation-info h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .donation-info {
+        padding: 0.5rem;
+        max-width: 100%;
+    }
+
+    .donation-info h2 {
+        font-size: 1rem;
+    }
+}
